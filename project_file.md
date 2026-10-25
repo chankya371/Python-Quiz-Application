@@ -268,15 +268,18 @@ Operating completely offline without relying on external web APIs, the system us
 | **Figure 4.5** | Data Flow Diagram (DFD Level 0 - Context Level) | Chapter 4.5 |
 | **Figure 4.6** | Data Flow Diagram (DFD Level 1 - Detailed Processes) | Chapter 4.5 |
 | **Figure 4.7** | Entity-Relationship (ER) Diagram of `quiz.db` | Chapter 4.7 |
-| **Figure 11.1** | User and Admin Login Interface | Chapter 11.4 |
-| **Figure 11.2** | Admin Dashboard Overview with Matplotlib Charts | Chapter 11.4 |
-| **Figure 11.3** | Manage Questions Window with Filtering Toolbar | Chapter 11.4 |
-| **Figure 11.4** | Add / Edit Question Modal Form | Chapter 11.4 |
-| **Figure 11.5** | Student Home Dashboard with Category Cards | Chapter 11.4 |
-| **Figure 11.6** | Live Quiz Screen with Countdown Timer and Options | Chapter 11.4 |
-| **Figure 11.7** | Quiz Performance Result Summary Screen | Chapter 11.4 |
-| **Figure 11.8** | Detailed Answer Key Review Screen with Explanations | Chapter 11.4 |
-| **Figure 11.9** | Audit Reports and Historical Attempts Screen | Chapter 11.4 |
+| **Figure 11.1** | Unified Login and Portal Selection Screen | Chapter 11.4 |
+| **Figure 11.2** | Admin Dashboard Overview with Live Metrics and Matplotlib Charts | Chapter 11.4 |
+| **Figure 11.3** | Question Management Window with Filtering Toolbar | Chapter 11.4 |
+| **Figure 11.4** | Category Management Window with Question Counters | Chapter 11.4 |
+| **Figure 11.5** | User Directory and Account Management Window | Chapter 11.4 |
+| **Figure 11.6** | Quiz Results and Audit Reports Window with CSV Export | Chapter 11.4 |
+| **Figure 11.7** | Global Quiz Settings Configuration Form | Chapter 11.4 |
+| **Figure 11.8** | Student Home Dashboard with Category Cards and Leaderboard | Chapter 11.4 |
+| **Figure 11.9** | Student Live Quiz Interface with Timer and Option Cards | Chapter 11.4 |
+| **Figure 11.10** | Post-Quiz Performance Summary Screen with Pass/Fail Badge | Chapter 11.4 |
+| **Figure 11.11** | Detailed Answer Key Review Screen with Explanations | Chapter 11.4 |
+| **Figure 11.12** | Student Personal Examination History Screen | Chapter 11.4 |
 
 ---
 
@@ -1454,107 +1457,101 @@ The project demonstrates:
 
 ### 11.4 Application Interface Screenshots
 
+The following original screenshots were captured directly from the executing desktop software, illustrating the core screens across the administrative and student subsystems.
+
 #### 11.4.1 Login and Portal Selection Interface
-```
-+-------------------------------------------------------------+
-|                  🧠 Python Quiz System                      |
-|    Professional Quiz Management & Student Assessment        |
-|                                                             |
-|       [ 👤 Student Login ]    [ 🛡️ Admin Portal ]           |
-|                                                             |
-|       Username: [ student                                 ] |
-|       Password: [ ●●●●●●●●●●                              ] |
-|                                                             |
-|                   [ 🔐 Sign In ]                            |
-|                                                             |
-|       Demo Student: student / student123                    |
-|       Don't have a student account? Create Account          |
-+-------------------------------------------------------------+
-```
-*Figure 11.1: Unified Login and Portal Selection Screen*
+![Figure 11.1: Unified Login and Portal Selection Screen](assets/screenshots/fig_11_1_login.png)
+*Figure 11.1: Unified Login and Portal Selection Screen with Student/Admin Toggle Tabs*
+
+The unified authentication view provides tabbed navigation between student access and administrative access, input fields for credentials, and a registration shortcut link for prospective students.
+
+<br>
 
 #### 11.4.2 Admin Analytics Dashboard
-```
-+-------------------------------------------------------------------------+
-| [🛡️ Admin Panel] | Total Questions: 25  Categories: 6  Users: 2         |
-| 📊 Dashboard    | Attempts: 1         Avg Score: 80.0% Pass Rate: 100% |
-| ❓ Questions    |-------------------------------------------------------|
-| 📂 Categories   | [ Active Questions / Category ] [ Pass / Fail Ratio ] |
-| 👥 Users        |   ||||                                 ( Passed )     |
-| 📝 Quiz Results |   ||||   ||                                           |
-| ⚙️ Settings     |-------------------------------------------------------|
-| 🚪 Log Out      | ⚡ Recent Attempts: student • All Categories • 80% ✓  |
-+-------------------------------------------------------------------------+
-```
-*Figure 11.2: Admin Dashboard Overview with Metrics and Charts*
+![Figure 11.2: Admin Dashboard Overview with Embedded Matplotlib Charts](assets/screenshots/fig_11_2_admin_dashboard.png)
+*Figure 11.2: Admin Dashboard Overview with Live Metrics and Embedded Matplotlib Charts*
+
+The administrative home dashboard displays six real-time Key Performance Indicator (KPI) cards alongside two embedded Matplotlib figures illustrating active question distribution across categories (bar chart) and overall student pass/fail ratios (pie chart).
+
+<br>
 
 #### 11.4.3 Question Management Module
-```
-+-------------------------------------------------------------------------+
-| Manage Questions  | [➕ Add Question] [📥 Import JSON] [📤 Export JSON]  |
-| Search: [______]  Category: [All ▾]  Diff: [All ▾]  Status: [All ▾]     |
-|-------------------------------------------------------------------------|
-| ID | Question Text               | Category        | Diff   | Ans | Pts |
-| 1  | What does CPU stand for?    | Computer Basics | Easy   | A   | 1   |
-| 2  | Which keyword defines func? | Python          | Medium | B   | 1   |
-| 3  | What memory is volatile?    | Computer Basics | Easy   | B   | 1   |
-+-------------------------------------------------------------------------+
-```
-*Figure 11.3: Question Management Table with Search and Filter Toolbar*
+![Figure 11.3: Question Management Window with Filtering Toolbar](assets/screenshots/fig_11_3_manage_questions.png)
+*Figure 11.3: Question Management Window with Search and Filtering Toolbar*
 
-#### 11.4.4 Student Live Quiz Interface
-```
-+-------------------------------------------------------------------------+
-| Question 3 of 10   [ Computer Basics • Easy ]             ⏱️ 09:42      |
-| [======================================                              ]  |
-|                                                                         |
-| +---------------------------------------------------------------------+ |
-| | What type of computer memory is volatile and loses data on power off? |
-| +---------------------------------------------------------------------+ |
-|                                                                         |
-|   ( A ) ROM (Read-Only Memory)                                       ○  |
-|   [ B ] RAM (Random Access Memory)                                   ●  |
-|   ( C ) Hard Disk Drive                                              ○  |
-|   ( D ) Flash Drive                                                  ○  |
-|                                                                         |
-| [ ◀ Previous ]            [ ❌ Leave Quiz ]          [ Next ▶ ]         |
-+-------------------------------------------------------------------------+
-```
-*Figure 11.4: Student Live Quiz Interface with Timer and Option Cards*
+Administrators can author, modify, delete, and toggle the activation state of multiple-choice questions. The view features dynamic search and filter dropdowns for category, difficulty, and status.
 
-#### 11.4.5 Post-Quiz Performance Summary
-```
-+-------------------------------------------------------------------------+
-|                      🎉 Congratulations, You Passed!                    |
-|                                                                         |
-|                                  80.0%                                  |
-|            Marks: 4 / 5 Points • Time: 0m 45s • Passing: 60%            |
-|                                                                         |
-| [ Total: 5 ]   [ Correct: 4 ]   [ Incorrect: 1 ]   [ Unanswered: 0 ]    |
-|                                                                         |
-|      [ 🔄 Retake Quiz ]   [ 🔍 Review Answers ]   [ 🏠 Dashboard ]      |
-+-------------------------------------------------------------------------+
-```
-*Figure 11.5: Quiz Performance Result Summary Screen*
+<br>
 
-#### 11.4.6 Detailed Question Review Screen
-```
-+-------------------------------------------------------------------------+
-| Question Review & Explanations                 [ ◀ Back to Summary ]    |
-|-------------------------------------------------------------------------|
-| Q1. What does CPU stand for in computer hardware?          ✓ Correct    |
-|   A. [CORRECT ANSWER] Central Processing Unit                           |
-|   B. Central Performance Unit                                           |
-|   💡 Explanation: CPU is the Central Processing Unit.                   |
-|-------------------------------------------------------------------------|
-| Q2. Which keyword is used to define a function in Python?  ✗ Incorrect  |
-|   A. function                                                           |
-|   B. [YOUR ANSWER] func                                                 |
-|   C. [CORRECT ANSWER] def                                               |
-|   💡 Explanation: The 'def' keyword is used to define custom functions. |
-+-------------------------------------------------------------------------+
-```
-*Figure 11.6: Detailed Answer Key Review Screen with Explanations*
+#### 11.4.4 Category Management Module
+![Figure 11.4: Category Management Window with Question Counters](assets/screenshots/fig_11_4_manage_categories.png)
+*Figure 11.4: Category Management Window with Question Counters and Safe-Delete Protection*
+
+Displays categorized subject areas, detailed descriptions, and question counters. Enforces safe-delete logic preventing accidental removal of categories containing active questions.
+
+<br>
+
+#### 11.4.5 User Directory and Account Management
+![Figure 11.5: User Management Window with Account Status Toggle](assets/screenshots/fig_11_5_manage_users.png)
+*Figure 11.5: User Management Window with Account Status Toggle*
+
+The user directory enables administrators to search registered student accounts, monitor examination attempts and average scores, and toggle account activation status without exposing passwords.
+
+<br>
+
+#### 11.4.6 Quiz Results and Audit Reports Module
+![Figure 11.6: Quiz Results and Audit Reports with CSV Export](assets/screenshots/fig_11_6_view_results.png)
+*Figure 11.6: Quiz Results and Audit Reports Window with CSV Export Functionality*
+
+Presents a complete historical audit trail of all student quiz attempts. Administrators can inspect attempt details or export comprehensive records directly into CSV format.
+
+<br>
+
+#### 11.4.7 Global Quiz Settings Configuration
+![Figure 11.7: Global Quiz Settings Configuration Form](assets/screenshots/fig_11_7_settings.png)
+*Figure 11.7: Global Quiz Settings Configuration Form*
+
+Provides administrative control over global test delivery parameters, including question quota per quiz, countdown timer duration, passing score percentage threshold, randomization, and retake permissions.
+
+<br>
+
+#### 11.4.8 Student Home Dashboard
+![Figure 11.8: Student Home Dashboard with Category Cards](assets/screenshots/fig_11_8_student_dashboard.png)
+*Figure 11.8: Student Home Dashboard with Interactive Category Cards and Platform Leaderboard*
+
+The student landing screen displays personal progress statistics, interactive category selection cards with live question counts, difficulty level options, recent attempt history, and the platform leaderboard.
+
+<br>
+
+#### 11.4.9 Student Live Quiz Interface
+![Figure 11.9: Live Quiz Screen with Countdown Timer and Options](assets/screenshots/fig_11_9_take_quiz.png)
+*Figure 11.9: Live Quiz Screen with Countdown Timer, Progress Bar, and Option Cards*
+
+The live examination screen presents one question at a time, displays real-time countdown timers with auto-submission, indicates progress, preserves selected options across navigation, and enables forward and backward review.
+
+<br>
+
+#### 11.4.10 Post-Quiz Performance Summary
+![Figure 11.10: Quiz Performance Result Summary Screen](assets/screenshots/fig_11_10_quiz_results.png)
+*Figure 11.10: Quiz Performance Result Summary Screen with Pass/Fail Badge*
+
+Immediately following submission, candidates receive an evaluation summary displaying percentage scores, marks obtained vs. maximum marks, time elapsed, itemized question statistics, and a Pass/Fail badge.
+
+<br>
+
+#### 11.4.11 Detailed Question Review Screen
+![Figure 11.11: Detailed Answer Key Review Screen with Explanations](assets/screenshots/fig_11_11_review_answers.png)
+*Figure 11.11: Detailed Answer Key Review Screen with Explanations*
+
+Permits students to inspect each question attempted alongside their chosen answer, the database-verified correct key, and an educational explanation for each item.
+
+<br>
+
+#### 11.4.12 Student Personal History Screen
+![Figure 11.12: Student Personal History Screen](assets/screenshots/fig_11_12_student_history.png)
+*Figure 11.12: Student Personal Attempt History Screen*
+
+Provides candidates with an exclusive personal log of their completed examinations, scores, percentages, and completion dates.
 
 <div style="page-break-after: always;"></div>
 
