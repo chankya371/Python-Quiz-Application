@@ -1,0 +1,18 @@
+# =====================================================================
+# Python Quiz Management System - Requirements
+# =====================================================================
+# External dependency for Admin Analytics Charts:
+matplotlib>=3.7.0
+
+# All other modules use the Python Standard Library:
+#   - tkinter / ttk (Desktop GUI Framework)
+#   - sqlite3 (Database Storage)
+#   - csv (Results Export)
+#   - json (Question Import/Export)
+#   - hashlib, secrets (Cryptographic Password Hashing)
+#   - datetime, os, sys (System Utilities)
+
+# ---------------------------------------------------------------------
+# Optional Dependency: Standalone Windows .EXE Packaging
+# ---------------------------------------------------------------------
+# pyinstaller>=6.0.0

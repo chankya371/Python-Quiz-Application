@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "category": "Computer Basics",
+    "question": "What does CPU stand for in computer hardware?",
+    "options": [
+      "Central Processing Unit",
+      "Central Performance Unit",
+      "Control Processing Utility",
+      "Computer Personal Unit"
+    ],
+    "answer": "Central Processing Unit"
+  },
+  {
+    "id": 2,
+    "category": "Programming",
+    "question": "Which keyword is used to define a function in Python?",
+    "options": [
+      "function",
+      "def",
+      "func",
+      "define"
+    ],
+    "answer": "def"
+  },
+  {
+    "id": 3,
+    "category": "Computer Basics",
+    "question": "What type of computer memory is volatile and loses data when powered off?",
+    "options": [
+      "ROM (Read-Only Memory)",
+      "RAM (Random Access Memory)",
+      "Hard Disk Drive",
+      "Flash Drive"
+    ],
+    "answer": "RAM (Random Access Memory)"
+  },
+  {
+    "id": 4,
+    "category": "Networking",
+    "question": "Which protocol provides encrypted, secure communication over the World Wide Web?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "HTTPS",
+      "SMTP"
+    ],
+    "answer": "HTTPS"
+  },
+  {
+    "id": 5,
+    "category": "Web Technology",
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Tech Modern Language",
+      "Hyper Transfer Markup Level",
+      "Home Tool Management Language"
+    ],
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+    "id": 6,
+    "category": "Python",
+    "question": "Who created the Python programming language?",
+    "options": [
+      "James Gosling",
+      "Guido van Rossum",
+      "Dennis Ritchie",
+      "Bjarne Stroustrup"
+    ],
+    "answer": "Guido van Rossum"
+  },
+  {
+    "id": 7,
+    "category": "Computer Basics",
+    "question": "What does SSD stand for in modern storage drives?",
+    "options": [
+      "Solid State Drive",
+      "System Storage Disk",
+      "Secure Serial Drive",
+      "Standard Silicon Device"
+    ],
+    "answer": "Solid State Drive"
+  },
+  {
+    "id": 8,
+    "category": "Python",
+    "question": "Which Python built-in data type is immutable?",
+    "options": [
+      "List",
+      "Dictionary",
+      "Set",
+      "Tuple"
+    ],
+    "answer": "Tuple"
+  },
+  {
+    "id": 9,
+    "category": "Operating Systems",
+    "question": "Which of the following is an open-source operating system kernel?",
+    "options": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "DOS"
+    ],
+    "answer": "Linux"
+  },
+  {
+    "id": 10,
+    "category": "Computer Basics",
+    "question": "What does GUI stand for in software applications?",
+    "options": [
+      "General User Interface",
+      "Graphical User Interface",
+      "Global Unified Input",
+      "Graphical Utility Integration"
+    ],
+    "answer": "Graphical User Interface"
+  },
+  {
+    "id": 11,
+    "category": "Networking",
+    "question": "What is the standard port number used for HTTP traffic?",
+    "options": [
+      "21",
+      "22",
+      "80",
+      "443"
+    ],
+    "answer": "80"
+  },
+  {
+    "id": 12,
+    "category": "Computer Science",
+    "question": "What is the binary representation of the decimal number 9?",
+    "options": [
+      "1001",
+      "1010",
+      "1100",
+      "0111"
+    ],
+    "answer": "1001"
+  },
+  {
+    "id": 13,
+    "category": "Python",
+    "question": "Which built-in function returns the total number of items in a list?",
+    "options": [
+      "count()",
+      "length()",
+      "len()",
+      "size()"
+    ],
+    "answer": "len()"
+  },
+  {
+    "id": 14,
+    "category": "Hardware",
+    "question": "Which component is primarily responsible for rendering graphics and 3D scenes?",
+    "options": [
+      "GPU (Graphics Processing Unit)",
+      "PSU (Power Supply Unit)",
+      "Motherboard Chipset",
+      "Sound Card"
+    ],
+    "answer": "GPU (Graphics Processing Unit)"
+  },
+  {
+    "id": 15,
+    "category": "Networking",
+    "question": "What does URL stand for in web addresses?",
+    "options": [
+      "Uniform Resource Locator",
+      "Universal Reference Link",
+      "Unified Routing Location",
+      "Universal Resource Line"
+    ],
+    "answer": "Uniform Resource Locator"
+  },
+  {
+    "id": 16,
+    "category": "Hardware",
+    "question": "Which is the fastest and smallest memory hierarchy located inside the CPU?",
+    "options": [
+      "Cache / Registers",
+      "RAM",
+      "NVMe SSD",
+      "Virtual Memory"
+    ],
+    "answer": "Cache / Registers"
+  },
+  {
+    "id": 17,
+    "category": "General Knowledge",
+    "question": "Which planet in our solar system is known as the 'Red Planet'?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Mercury"
+    ],
+    "answer": "Mars"
+  },
+  {
+    "id": 18,
+    "category": "General Knowledge",
+    "question": "What is the chemical symbol for the element Gold?",
+    "options": [
+      "Ag",
+      "Au",
+      "Gd",
+      "Fe"
+    ],
+    "answer": "Au"
+  },
+  {
+    "id": 19,
+    "category": "General Knowledge",
+    "question": "What is the largest and deepest ocean on planet Earth?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean",
+      "Pacific Ocean"
+    ],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "id": 20,
+    "category": "General Knowledge",
+    "question": "Who formulated the Three Laws of Motion in classical physics?",
+    "options": [
+      "Albert Einstein",
+      "Sir Isaac Newton",
+      "Galileo Galilei",
+      "Nikola Tesla"
+    ],
+    "answer": "Sir Isaac Newton"
+  },
+  {
+    "id": 21,
+    "category": "Computer Basics",
+    "question": "How many bits make up one byte?",
+    "options": [
+      "4 bits",
+      "8 bits",
+      "16 bits",
+      "32 bits"
+    ],
+    "answer": "8 bits"
+  },
+  {
+    "id": 22,
+    "category": "Python",
+    "question": "Which symbol is used to write single-line comments in Python?",
+    "options": [
+      "//",
+      "/*",
+      "#",
+      "--"
+    ],
+    "answer": "#"
+  },
+  {
+    "id": 23,
+    "category": "Networking",
+    "question": "What does DNS stand for in internet infrastructure?",
+    "options": [
+      "Domain Name System",
+      "Digital Network Service",
+      "Dynamic Network Server",
+      "Domain Node Serializer"
+    ],
+    "answer": "Domain Name System"
+  },
+  {
+    "id": 24,
+    "category": "General Knowledge",
+    "question": "In which continent is the Sahara Desert located?",
+    "options": [
+      "Asia",
+      "South America",
+      "Africa",
+      "Australia"
+    ],
+    "answer": "Africa"
+  },
+  {
+    "id": 25,
+    "category": "Computer Basics",
+    "question": "Which keyboard shortcut is standard for copying selected text in Windows?",
+    "options": [
+      "Ctrl + X",
+      "Ctrl + V",
+      "Ctrl + C",
+      "Ctrl + Z"
+    ],
+    "answer": "Ctrl + C"
+  }
+]
